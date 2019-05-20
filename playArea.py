@@ -74,7 +74,7 @@ def delPlayArea():
     # select deleting addr
     while(True):
         sel = int(input('select address number: '))
-        if(0 <= sel and sel < len(addrs)):
+        if(0 <= sel and sel <= len(addrs)):
             del addrs[sel - 1]
             break
         print('check your input number')
